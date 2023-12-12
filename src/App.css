@@ -113,6 +113,8 @@ background-color: rgb(34, 34, 34);
   font-size: 15px;
   font-weight: 600;
   width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
 }
 
 form{
@@ -209,4 +211,16 @@ form input {
   color: darkcyan;
 }
 
+@media screen and  (max-width : 700px){
 
+  .todo-list p{
+    list-style: none;
+    font-weight: 500;
+    max-width: 210px;
+    height: fit-content;
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 15px;
+  }
+
+}
