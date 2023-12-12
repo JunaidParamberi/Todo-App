@@ -211,6 +211,20 @@ form input {
   color: darkcyan;
 }
 
+.reset{
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 10px;
+}
+
 @media screen and  (max-width : 700px){
 
   .todo-list p{

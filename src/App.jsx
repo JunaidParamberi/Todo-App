@@ -55,6 +55,10 @@ function App() {
   
   }
 
+  function reset(){
+    setTodos([])
+  }
+
   const todoElements = todos.map((item) => (
     <Todo key={item.todoId} lists={item} 
     todosArr = {todos}
@@ -69,6 +73,7 @@ function App() {
       
       <div className='todo-app-container'>
      <h1>Todo</h1>
+     
      
       {todoElements}  
         <form onSubmit={addTodo} action="">
@@ -89,8 +94,9 @@ function App() {
   
 </div>
 }
-        <button onClick={addTodo} className='add-btn'>Add Todo</button>
-
+        
+<button onClick={addTodo} className='add-btn'>Add Todo</button>
+<button onClick={reset} className='reset'>Reset</button>
 
     </div>
   )
